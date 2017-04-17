@@ -15,6 +15,8 @@
 		A0CD61E11EA4952100355E29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CD61DF1EA4952100355E29 /* LaunchScreen.storyboard */; };
 		A0CD61EC1EA4952200355E29 /* PullDownViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD61EB1EA4952200355E29 /* PullDownViewTests.m */; };
 		A0CD61F71EA4952200355E29 /* PullDownViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD61F61EA4952200355E29 /* PullDownViewUITests.m */; };
+		A0CD62071EA4959F00355E29 /* PullDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD62061EA4959F00355E29 /* PullDownView.m */; };
+		A0ED5CE91EA4A1D200DBD3DA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A0ED5CE81EA4A1D200DBD3DA /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		A0CD61F21EA4952200355E29 /* PullDownViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PullDownViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CD61F61EA4952200355E29 /* PullDownViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PullDownViewUITests.m; sourceTree = "<group>"; };
 		A0CD61F81EA4952200355E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0CD62051EA4959F00355E29 /* PullDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullDownView.h; sourceTree = "<group>"; };
+		A0CD62061EA4959F00355E29 /* PullDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullDownView.m; sourceTree = "<group>"; };
+		A0ED5CE81EA4A1D200DBD3DA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,8 @@
 		A0CD61D01EA4952100355E29 /* PullDownView */ = {
 			isa = PBXGroup;
 			children = (
+				A0ED5CE81EA4A1D200DBD3DA /* icon.png */,
+				A0CD62041EA4957700355E29 /* Classes */,
 				A0CD61D41EA4952100355E29 /* AppDelegate.h */,
 				A0CD61D51EA4952100355E29 /* AppDelegate.m */,
 				A0CD61D71EA4952100355E29 /* ViewController.h */,
@@ -138,6 +145,15 @@
 				A0CD61F81EA4952200355E29 /* Info.plist */,
 			);
 			path = PullDownViewUITests;
+			sourceTree = "<group>";
+		};
+		A0CD62041EA4957700355E29 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A0CD62051EA4959F00355E29 /* PullDownView.h */,
+				A0CD62061EA4959F00355E29 /* PullDownView.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +223,8 @@
 				TargetAttributes = {
 					A0CD61CD1EA4952100355E29 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = Y5ZP3NDNWZ;
+						ProvisioningStyle = Manual;
 					};
 					A0CD61E61EA4952100355E29 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -248,6 +265,7 @@
 			files = (
 				A0CD61E11EA4952100355E29 /* LaunchScreen.storyboard in Resources */,
 				A0CD61DE1EA4952100355E29 /* Assets.xcassets in Resources */,
+				A0ED5CE91EA4A1D200DBD3DA /* icon.png in Resources */,
 				A0CD61DC1EA4952100355E29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0CD61D91EA4952100355E29 /* ViewController.m in Sources */,
+				A0CD62071EA4959F00355E29 /* PullDownView.m in Sources */,
 				A0CD61D61EA4952100355E29 /* AppDelegate.m in Sources */,
 				A0CD61D31EA4952100355E29 /* main.m in Sources */,
 			);
@@ -351,7 +370,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: wang yutao (NFYLFAMW3H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wang yutao (NFYLFAMW3H)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -373,6 +393,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "2f9728a9-b895-44bc-a979-b472eaa907a8";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -399,7 +420,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: wang yutao (NFYLFAMW3H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wang yutao (NFYLFAMW3H)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -414,6 +436,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "2f9728a9-b895-44bc-a979-b472eaa907a8";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -424,10 +447,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wang yutao (NFYLFAMW3H)";
+				DEVELOPMENT_TEAM = Y5ZP3NDNWZ;
 				INFOPLIST_FILE = PullDownView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yirendai.PullDownView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.creditease.yidingying;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a5f1641c-bf6d-46d4-b71c-a9254528101d";
+				PROVISIONING_PROFILE_SPECIFIER = "GCApp-Dev";
 			};
 			name = Debug;
 		};
@@ -435,10 +463,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y5ZP3NDNWZ;
 				INFOPLIST_FILE = PullDownView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yirendai.PullDownView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.creditease.yidingying;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2f9728a9-b895-44bc-a979-b472eaa907a8";
+				PROVISIONING_PROFILE_SPECIFIER = "GCApp-Dev";
 			};
 			name = Release;
 		};
@@ -498,7 +530,7 @@
 				A0CD61FA1EA4952200355E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A0CD61FB1EA4952200355E29 /* Build configuration list for PBXNativeTarget "PullDownView" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +539,7 @@
 				A0CD61FD1EA4952200355E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		A0CD61FE1EA4952200355E29 /* Build configuration list for PBXNativeTarget "PullDownViewTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +548,7 @@
 				A0CD62001EA4952200355E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		A0CD62011EA4952200355E29 /* Build configuration list for PBXNativeTarget "PullDownViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +557,7 @@
 				A0CD62031EA4952200355E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
