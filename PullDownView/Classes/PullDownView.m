@@ -8,13 +8,12 @@
 
 #import "PullDownView.h"
 
-#define PullDownArrowHeight    10.f
-#define PullDownArrowCurvature 6.f
-#define SPACE                  2.f
-#define ROW_HEIGHT             44.f
+#define PullDownArrowHeight    10.f // 箭头的高
+#define PullDownArrowCurvature 6.f  // 箭头的弯曲度 扭率
+#define SPACE                  2.f  // tableview的上下左右间距
+#define ROW_HEIGHT             44.f // tableview的cell高
+#define PullDownTextSize       CGSizeMake(300, 100) // cell文本长度限制
 #define RGB(r, g, b)           [UIColor colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:1.f]
-#define PullDownViewMAXWidth   3.f
-#define PullDownTextSize       CGSizeMake(300, 100)
 
 @interface PullDownView () <UITableViewDelegate, UITableViewDataSource>
 
@@ -25,7 +24,6 @@
 @property (nonatomic, assign) CGPoint showPoint;
 
 @end
-
 
 @implementation PullDownView
 
@@ -85,7 +83,6 @@
 }
 
 - (void)show {
-    
     // 添加一个蒙层
     self.handerView = [UIButton buttonWithType:UIButtonTypeCustom];
     self.handerView.frame = [UIScreen mainScreen].bounds;
@@ -115,7 +112,6 @@
 }
 
 - (void)dismiss:(BOOL)animate {
-
     if (!animate) {
         [self.handerView removeFromSuperview];
         return;
@@ -132,7 +128,6 @@
     if (_tableView != nil) {
         return _tableView;
     }
-    
     CGRect rect = self.frame;
     rect.origin.x = SPACE;
     rect.origin.y = PullDownArrowHeight + SPACE;
@@ -148,7 +143,6 @@
     _tableView.scrollsToTop = NO;
     _tableView.backgroundColor = [UIColor clearColor];
     return _tableView;
-
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
