@@ -36,6 +36,7 @@
     return self;
 }
 
+// point 箭头的x、y  titles 文本数组  images 图片数组
 - (id)initWithPoint:(CGPoint)point titles:(NSArray *)titles images:(NSArray *)images {
     self = [super init];
     if (self) {

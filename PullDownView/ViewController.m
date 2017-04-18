@@ -46,6 +46,7 @@
     PullDownView *pullDown = [[PullDownView alloc] initWithPoint:point titles:titles images:images];
     pullDown.selectRowAtIndex = ^(NSInteger index){
         NSLog(@"select index:%ld", index);
+        // do something
     };
     [pullDown show];
 }
